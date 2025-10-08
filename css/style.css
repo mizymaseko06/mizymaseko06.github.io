@@ -1,4 +1,6 @@
 body{
+    opacity: 0;
+    transition: opacity 3s ease-in;
     --blue: #0A0F1D;
     --yellow: #F7DF1E;
     --white: #FFFFFF;
@@ -7,6 +9,21 @@ body{
     --text-font: "Averia Serif Libre";
     color: var(--white);
     font-family: var(--text-font);
+}
+
+body.fade-in{
+    opacity: 1;
+}
+
+.fade-element {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-element.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 header{
