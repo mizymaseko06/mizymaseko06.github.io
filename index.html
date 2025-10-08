@@ -32,16 +32,17 @@
             <div class="collapse navbar-collapse align-items-center justify-content-end ms-2" id="MainNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a href="#about-me" class="nav-link">About Me</a>
+                        <a href="#about-me" data-bs-toggle="collapse" class="nav-link">About Me</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#services" class="nav-link">Services</a>
+                        <a href="#services" data-bs-toggle="collapse" class="nav-link">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#portfolio" class="nav-link">Portfolio</a>
+                        <a href="#portfolio" data-bs-toggle="collapse" class="nav-link">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#footer" class="btn btn-light lets-connect-btn">Let's connect!</a>
+                        <a href="#footer" data-bs-toggle="collapse" class="btn btn-light lets-connect-btn">Let's
+                            connect!</a>
                     </li>
                 </ul>
             </div>
@@ -129,12 +130,46 @@
         </section>
         <section id="portfolio" class="container my-5">
             <h1 class="header-text">Portfolio</h1>
-            <p class="lead secondary-header-text">Projects<span
-                    style="font-family: var(--text-font); font-size: small; color: var(--yellow);">(NOTE: Some of the
-                    live demos aren't available due to expired hosting. Will be sorted soon, check the UIs in the
-                    meantime)~</span></p>
+            <div class="row card-deck justify-content-center">
+                <p class="lead secondary-header-text">Undergraduate final-year research project</p>
+                <div class="d-flex row justify-content-center mb-5 pt-5">
+                    <div class="col-10 col-lg-4 align-content-center">
+                        <img src="images/TB Track.png" class="img-fluid align-content-center" alt="">
+                    </div>
 
+                    <div class="col-10 col-lg-4 align-content-center text-center text-lg-start">
+                        <!-- <p>REFECTORY FOOD ORDERING SYSTEM</p> -->
+                        <p>For the final-year capstone project, my project partner and I designed and developed a mobile
+                            health (mHealth) application
+                            to
+                            improve tuberculosis (TB) screening and monitoring in rural communities of Eswatini. The
+                            app,
+                            built
+                            with
+                            Flutter (frontend) and Firebase (backend), includes a digital TB symptom screening tool,
+                            referral
+                            system
+                            with geolocation and multilingual educational content. We selected this project seeing its
+                            potential to support early TB detection, improve healthcare access, and
+                            serve
+                            as a
+                            model for addressing other public health challenges in low-resource settings.</p>
+
+                        <a href="" target="_blank" class="btn btn-light">Download app prototype</a>
+                        <a href="files/M-Health Application for TB screening and Monitoring in rural communities of Eswatini.pdf"
+                            target="_blank" class="btn btn-primary">View research paper</a>
+                    </div>
+                </div>
+
+
+
+            </div>
             <div class="container-sm">
+                <p class="lead secondary-header-text">Projects <span
+                        style="font-family: var(--text-font); font-size: small; color: var(--yellow);">(NOTE: Some of
+                        the
+                        live demos aren't available due to expired hosting. Will be sorted soon, check the UIs in the
+                        meantime)</span></p>
                 <div class="row justify-content-center">
                     <div class="col-11 px-1">
                         <div class="overflow-auto justify-content-center">
@@ -286,14 +321,18 @@
                                 <div class="col-10 col-lg-4 align-content-center">
                                     <figure>
                                         <img src="images/TB Track UI.png" class="img-fluid" alt="">
-                                        <figcaption class="pic-caption">UI design for TB Track, mobile app for screening and monitoring TB in rural areas. Created for my project partner and I's final year project
+                                        <figcaption class="pic-caption">UI design for TB Track, mobile app for screening
+                                            and monitoring TB in rural areas. Created for my project partner and I's
+                                            final year project
                                         </figcaption>
                                     </figure>
                                 </div>
                                 <div class="col-10 col-lg-4 align-content-center">
                                     <figure>
                                         <img src="images/CampusCare UI.png" class="img-fluid" alt="">
-                                        <figcaption class="pic-caption">UI Design for CampusCare, a mobile app designed for accessing health information at our campus clinic. Was a final year project by another student.
+                                        <figcaption class="pic-caption">UI Design for CampusCare, a mobile app designed
+                                            for accessing health information at our campus clinic. Was a final year
+                                            project by another student.
                                         </figcaption>
                                     </figure>
                                 </div>
